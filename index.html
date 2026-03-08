@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Wanderlust — Discover breathtaking destinations around the world. Plan your dream vacation with curated travel packages and expert guides.">
+  <title>Wanderlust — Explore the World's Most Beautiful Destinations</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons (lightweight) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">
+        <div class="nav-logo-icon">🌿</div>
+        Wanderlust
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#packages" class="nav-cta">Book Now</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/hero.png" alt="Beautiful tropical beach with turquoise water" loading="eager">
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fa-solid fa-earth-americas"></i>
+        Explore 100+ Destinations Worldwide
+      </div>
+
+      <h1>Discover Your Next <span>Adventure</span></h1>
+
+      <p>Explore the world's most breathtaking destinations. From tropical paradises to alpine wonderlands — your dream
+        journey starts here.</p>
+
+      <!-- Search Bar -->
+      <div class="hero-search">
+        <div class="search-group">
+          <i class="fa-solid fa-location-dot"></i>
+          <input type="text" id="search-destination" placeholder="Where to?" aria-label="Destination">
+        </div>
+        <div class="search-group">
+          <i class="fa-regular fa-calendar"></i>
+          <input type="text" id="search-date" placeholder="When?" aria-label="Travel date">
+        </div>
+        <button class="hero-search-btn" id="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          Explore
+        </button>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-number">500+</div>
+          <div class="hero-stat-label">Destinations</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">10K+</div>
+          <div class="hero-stat-label">Happy Travelers</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">4.9</div>
+          <div class="hero-stat-label">Average Rating</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-indicator-mouse"></div>
+      Scroll to explore
+    </div>
+  </section>
+
+  <!-- ===== POPULAR DESTINATIONS ===== -->
+  <section class="section destinations" id="destinations">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-badge">
+          <i class="fa-solid fa-compass"></i>
+          Popular Destinations
+        </div>
+        <h2>Explore Trending Destinations</h2>
+        <p>Handpicked destinations loved by travelers worldwide. Find your perfect getaway from tropical beaches to
+          mountain retreats.</p>
+      </div>
+
+      <div class="destinations-grid">
+        <!-- Bali -->
+        <div class="destination-card animate-on-scroll delay-1">
+          <div class="destination-card-img">
+            <img src="images/bali.png" alt="Bali Indonesia rice terraces and temples" loading="lazy">
+          </div>
+          <div class="destination-card-overlay"></div>
+          <div class="destination-card-content">
+            <div class="destination-card-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Indonesia
+            </div>
+            <h3>Bali</h3>
+            <div class="destination-card-meta">
+              <div class="destination-card-price">₹74,999 <span>/ person</span></div>
+              <div class="destination-card-rating">
+                <i class="fa-solid fa-star"></i> 4.9
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Santorini -->
+        <div class="destination-card animate-on-scroll delay-2">
+          <div class="destination-card-img">
+            <img src="images/santorini.png" alt="Santorini Greece white buildings and blue domes" loading="lazy">
+          </div>
+          <div class="destination-card-overlay"></div>
+          <div class="destination-card-content">
+            <div class="destination-card-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Greece
+            </div>
+            <h3>Santorini</h3>
+            <div class="destination-card-meta">
+              <div class="destination-card-price">₹1,09,999 <span>/ person</span></div>
+              <div class="destination-card-rating">
+                <i class="fa-solid fa-star"></i> 4.8
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swiss Alps -->
+        <div class="destination-card animate-on-scroll delay-3">
+          <div class="destination-card-img">
+            <img src="images/swiss-alps.png" alt="Swiss Alps green meadows and mountain peaks" loading="lazy">
+          </div>
+          <div class="destination-card-overlay"></div>
+          <div class="destination-card-content">
+            <div class="destination-card-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Switzerland
+            </div>
+            <h3>Swiss Alps</h3>
+            <div class="destination-card-meta">
+              <div class="destination-card-price">₹1,34,999 <span>/ person</span></div>
+              <div class="destination-card-rating">
+                <i class="fa-solid fa-star"></i> 4.9
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Maldives -->
+        <div class="destination-card animate-on-scroll delay-1">
+          <div class="destination-card-img">
+            <img src="images/maldives.png" alt="Maldives overwater bungalows and turquoise lagoon" loading="lazy">
+          </div>
+          <div class="destination-card-overlay"></div>
+          <div class="destination-card-content">
+            <div class="destination-card-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Maldives
+            </div>
+            <h3>Maldives</h3>
+            <div class="destination-card-meta">
+              <div class="destination-card-price">₹1,84,999 <span>/ person</span></div>
+              <div class="destination-card-rating">
+                <i class="fa-solid fa-star"></i> 5.0
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kyoto -->
+        <div class="destination-card animate-on-scroll delay-2">
+          <div class="destination-card-img">
+            <img src="images/kyoto.png" alt="Kyoto Japan cherry blossoms and pagoda temple" loading="lazy">
+          </div>
+          <div class="destination-card-overlay"></div>
+          <div class="destination-card-content">
+            <div class="destination-card-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Japan
+            </div>
+            <h3>Kyoto</h3>
+            <div class="destination-card-meta">
+              <div class="destination-card-price">₹91,999 <span>/ person</span></div>
+              <div class="destination-card-rating">
+                <i class="fa-solid fa-star"></i> 4.8
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Patagonia -->
+        <div class="destination-card animate-on-scroll delay-3">
+          <div class="destination-card-img">
+            <img src="images/patagonia.png" alt="Patagonia Argentina mountain peaks and turquoise lake" loading="lazy">
+          </div>
+          <div class="destination-card-overlay"></div>
+          <div class="destination-card-content">
+            <div class="destination-card-location">
+              <i class="fa-solid fa-location-dot"></i>
+              Argentina
+            </div>
+            <h3>Patagonia</h3>
+            <div class="destination-card-meta">
+              <div class="destination-card-price">₹1,59,999 <span>/ person</span></div>
+              <div class="destination-card-rating">
+                <i class="fa-solid fa-star"></i> 4.7
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRAVEL PACKAGES ===== -->
+  <section class="section packages" id="packages">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-badge">
+          <i class="fa-solid fa-suitcase-rolling"></i>
+          Travel Packages
+        </div>
+        <h2>Choose Your Perfect Trip</h2>
+        <p>Flexible packages designed for every kind of traveler. From budget-friendly escapes to luxury getaways.</p>
+      </div>
+
+      <div class="packages-grid">
+        <!-- Explorer Package -->
+        <div class="package-card animate-on-scroll delay-1">
+          <div class="package-icon">
+            <i class="fa-solid fa-hiking"></i>
+          </div>
+          <h3>Explorer</h3>
+          <p class="package-desc">Perfect for budget-conscious adventurers who love to explore.</p>
+          <div class="package-price">
+            <span class="amount">₹39,999</span>
+            <span class="period">/ person</span>
+          </div>
+          <ul class="package-features">
+            <li><i class="fa-solid fa-check"></i> 4 Nights Accommodation</li>
+            <li><i class="fa-solid fa-check"></i> Guided City Tours</li>
+            <li><i class="fa-solid fa-check"></i> Airport Transfers</li>
+            <li><i class="fa-solid fa-check"></i> Breakfast Included</li>
+            <li><i class="fa-solid fa-check"></i> Travel Insurance</li>
+          </ul>
+          <button class="package-btn" id="explorer-pkg-btn">Get Started</button>
+        </div>
+
+        <!-- Voyager Package (Featured) -->
+        <div class="package-card featured animate-on-scroll delay-2">
+          <div class="package-popular-badge">Most Popular</div>
+          <div class="package-icon">
+            <i class="fa-solid fa-plane"></i>
+          </div>
+          <h3>Voyager</h3>
+          <p class="package-desc">Our most popular choice with the best balance of comfort and adventure.</p>
+          <div class="package-price">
+            <span class="amount">₹79,999</span>
+            <span class="period">/ person</span>
+          </div>
+          <ul class="package-features">
+            <li><i class="fa-solid fa-check"></i> 7 Nights Luxury Stay</li>
+            <li><i class="fa-solid fa-check"></i> Private Guided Tours</li>
+            <li><i class="fa-solid fa-check"></i> All Meals Included</li>
+            <li><i class="fa-solid fa-check"></i> Spa & Wellness Access</li>
+            <li><i class="fa-solid fa-check"></i> Adventure Activities</li>
+            <li><i class="fa-solid fa-check"></i> 24/7 Concierge</li>
+          </ul>
+          <button class="package-btn" id="voyager-pkg-btn">Get Started</button>
+        </div>
+
+        <!-- Luxe Package -->
+        <div class="package-card animate-on-scroll delay-3">
+          <div class="package-icon">
+            <i class="fa-solid fa-gem"></i>
+          </div>
+          <h3>Luxe</h3>
+          <p class="package-desc">The ultimate luxury experience with premium perks and exclusivity.</p>
+          <div class="package-price">
+            <span class="amount">₹1,99,999</span>
+            <span class="period">/ person</span>
+          </div>
+          <ul class="package-features">
+            <li><i class="fa-solid fa-check"></i> 10 Nights 5-Star Resort</li>
+            <li><i class="fa-solid fa-check"></i> Private Yacht Excursion</li>
+            <li><i class="fa-solid fa-check"></i> Fine Dining Experiences</li>
+            <li><i class="fa-solid fa-check"></i> Helicopter Tour</li>
+            <li><i class="fa-solid fa-check"></i> Personal Photographer</li>
+            <li><i class="fa-solid fa-check"></i> VIP Everything</li>
+          </ul>
+          <button class="package-btn" id="luxe-pkg-btn">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-badge">
+          <i class="fa-solid fa-heart"></i>
+          Testimonials
+        </div>
+        <h2>What Travelers Say</h2>
+        <p>Real stories from real adventurers who trusted Wanderlust to create unforgettable experiences.</p>
+      </div>
+
+      <div class="testimonials-wrapper animate-on-scroll">
+        <div class="testimonials-track">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-slide active" id="testimonial-1">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Our Bali trip was absolutely magical! Every detail was perfectly planned — from
+              the stunning rice terrace tours to the beachfront villa. Wanderlust made our honeymoon unforgettable."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SK</div>
+              <div class="testimonial-author-info">
+                <h4>Sarah & Kevin</h4>
+                <p>Bali, Indonesia — Dec 2025</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-slide" id="testimonial-2">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">"The Swiss Alps package exceeded every expectation. The private guided hikes
+              through wildflower meadows, cozy chalets, and fondue nights — it was pure alpine paradise. Already
+              planning our next trip!"</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">MR</div>
+              <div class="testimonial-author-info">
+                <h4>Michael Rodriguez</h4>
+                <p>Swiss Alps — Oct 2025</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-slide" id="testimonial-3">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Santorini sunsets, incredible food, and the most breathtaking views I've ever
+              seen. The Voyager package gave us the perfect mix of relaxation and adventure. 10/10 would recommend!"</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">EL</div>
+              <div class="testimonial-author-info">
+                <h4>Emma Liu</h4>
+                <p>Santorini, Greece — Sep 2025</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="testimonial-slide" id="testimonial-4">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Took my family to the Maldives with the Luxe package. Private overwater villa,
+              snorkeling with sea turtles, and the kids still talk about it every day. Worth every single penny. Thank
+              you Wanderlust!"</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">JP</div>
+              <div class="testimonial-author-info">
+                <h4>James Patterson</h4>
+                <p>Maldives — Nov 2025</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 5 (Indian Review) -->
+          <div class="testimonial-slide" id="testimonial-5">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Our Ladakh expedition was soul-stirring! The logistics at high altitude were
+              handled flawlessly by Wanderlust. From the Pangong Lake camps to the monasteries, it was deeply spiritual
+              and adventurous."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">RS</div>
+              <div class="testimonial-author-info">
+                <h4>Rohan Sharma</h4>
+                <p>Ladakh, India — June 2025</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 6 (Indian Review) -->
+          <div class="testimonial-slide" id="testimonial-6">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Kyoto in cherry blossom season was a dream. The local guides provided by
+              Wanderlust were fantastic, giving us deep insights into Japanese culture. A very well-balanced and
+              respectful trip."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">AM</div>
+              <div class="testimonial-author-info">
+                <h4>Anjali Mehta</h4>
+                <p>Kyoto, Japan — April 2025</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 7 (Indian Review) -->
+          <div class="testimonial-slide" id="testimonial-7">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">"The family trip to Maldives was exceptional. Every detail was curated with
+              care—from the vegetarian dining options to the sunset cruises. It felt like a true home away from home."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">VP</div>
+              <div class="testimonial-author-info">
+                <h4>Vikram & Priya</h4>
+                <p>Maldives — Jan 2026</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arrows -->
+        <div class="testimonial-arrows">
+          <button class="testimonial-arrow" id="testimonial-prev" aria-label="Previous testimonial">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="testimonial-arrow" id="testimonial-next" aria-label="Next testimonial">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <!-- Dots -->
+        <div class="testimonial-nav" id="testimonial-dots">
+          <button class="testimonial-dot active" data-index="0" aria-label="Go to testimonial 1"></button>
+          <button class="testimonial-dot" data-index="1" aria-label="Go to testimonial 2"></button>
+          <button class="testimonial-dot" data-index="2" aria-label="Go to testimonial 3"></button>
+          <button class="testimonial-dot" data-index="3" aria-label="Go to testimonial 4"></button>
+          <button class="testimonial-dot" data-index="4" aria-label="Go to testimonial 5"></button>
+          <button class="testimonial-dot" data-index="5" aria-label="Go to testimonial 6"></button>
+          <button class="testimonial-dot" data-index="6" aria-label="Go to testimonial 7"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRAVEL BLOG ===== -->
+  <section class="section blog" id="blog">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-badge">
+          <i class="fa-solid fa-pen-nib"></i>
+          Travel Blog
+        </div>
+        <h2>Stories & Travel Tips</h2>
+        <p>Expert advice, hidden gems, and inspiring stories to fuel your wanderlust and help plan your next adventure.
+        </p>
+      </div>
+
+      <div class="blog-grid">
+        <!-- Blog Post 1 -->
+        <article class="blog-card animate-on-scroll delay-1">
+          <div class="blog-card-img">
+            <img src="images/bali.png" alt="Tropical travel packing essentials" loading="lazy">
+            <span class="blog-card-category">Tips & Tricks</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-date">
+              <i class="fa-regular fa-clock"></i>
+              Feb 28, 2026
+            </div>
+            <h3>10 Essential Packing Tips for Tropical Destinations</h3>
+            <p>Don't let overpacking ruin your vacation. Here are the must-know packing hacks for your next tropical
+              getaway...</p>
+            <a href="#" class="blog-read-more">
+              Read More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article class="blog-card animate-on-scroll delay-2">
+          <div class="blog-card-img">
+            <img src="images/kyoto.png" alt="Hidden gem destinations around the world" loading="lazy">
+            <span class="blog-card-category">Hidden Gems</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-date">
+              <i class="fa-regular fa-clock"></i>
+              Feb 15, 2026
+            </div>
+            <h3>7 Underrated Destinations You Need to Visit in 2026</h3>
+            <p>Skip the tourist traps and discover these hidden paradise spots that will take your breath away...</p>
+            <a href="#" class="blog-read-more">
+              Read More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog Post 3 -->
+        <article class="blog-card animate-on-scroll delay-3">
+          <div class="blog-card-img">
+            <img src="images/patagonia.png" alt="Solo traveler in mountains" loading="lazy">
+            <span class="blog-card-category">Solo Travel</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-date">
+              <i class="fa-regular fa-clock"></i>
+              Jan 30, 2026
+            </div>
+            <h3>The Ultimate Guide to Solo Travel: Safety, Tips & Freedom</h3>
+            <p>Thinking about traveling solo? Here's everything you need to know to embark on the journey of a
+              lifetime...</p>
+            <a href="#" class="blog-read-more">
+              Read More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-badge">
+          <i class="fa-solid fa-paper-plane"></i>
+          Get In Touch
+        </div>
+        <h2>Let's Plan Your Dream Trip</h2>
+        <p>Have questions or ready to book? Reach out and our travel experts will help craft your perfect adventure.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info animate-on-scroll delay-1">
+          <h3>We'd Love to Hear From You</h3>
+          <p>Whether you have a question about our packages, destinations, or anything else — our team is ready to
+            answer all your questions.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-detail-text">
+                <h4>Email Us</h4>
+                <p>Neemay.gupta2007@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-detail-text">
+                <h4>Call Us</h4>
+                <p>+91 9717911478</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="#" class="contact-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="contact-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="contact-social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="contact-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form animate-on-scroll delay-2" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-firstname">First Name</label>
+              <input type="text" id="contact-firstname" placeholder="FirstName" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-lastname">Last Name</label>
+              <input type="text" id="contact-lastname" placeholder="LastName" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-phone">Phone Number</label>
+              <input type="tel" id="contact-phone" placeholder="9717911XXX">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-destination">Interested Destination</label>
+            <select id="contact-destination">
+              <option value="">Select a destination</option>
+              <option value="bali">Bali, Indonesia</option>
+              <option value="santorini">Santorini, Greece</option>
+              <option value="swiss-alps">Swiss Alps</option>
+              <option value="maldives">Maldives</option>
+              <option value="kyoto">Kyoto, Japan</option>
+              <option value="patagonia">Patagonia, Argentina</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Your Message</label>
+            <textarea id="contact-message" placeholder="Tell us about your dream trip..." required></textarea>
+          </div>
+
+          <button type="submit" class="form-submit-btn" id="contact-submit">
+            <i class="fa-solid fa-paper-plane"></i>
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <div class="nav-logo-icon">🌿</div>
+            Wanderlust
+          </a>
+          <p>Making travel dreams come true since 2020. We connect adventurers with the world's most incredible
+            destinations and experiences.</p>
+          <div class="contact-socials">
+            <a href="#" class="contact-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="contact-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="contact-social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="contact-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#blog">Travel Blog</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Cancellation Policy</a></li>
+            <li><a href="#">Travel Insurance</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Subscribe to our newsletter for exclusive deals, travel tips, and destination inspiration.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" id="newsletter-email" placeholder="Your email address" required>
+            <button type="submit" aria-label="Subscribe to newsletter">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Wanderlust. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
