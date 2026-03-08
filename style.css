@@ -1653,69 +1653,80 @@ ul {
   }
 }
 
-/* ===== CUSTOM WATSON ASSISTANT STYLING ===== */
-/* Note: We use !important where necessary to override IBM's default shadows/styles */
+/* ===== ULTRA-COOL WATSON ASSISTANT STYLING ===== */
+/* Enhancing the launcher button to look modern and interactive */
 
-#WACLauncher__Button {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%) !important;
-  box-shadow: 0 10px 30px rgba(8, 145, 178, 0.4) !important;
-  border: 2px solid rgba(255, 255, 255, 0.2) !important;
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
-  animation: float 4s ease-in-out infinite !important;
+#WACLauncher__Button,
+.WACLauncher__Button {
+  background: linear-gradient(135deg, #0891b2 0%, #059669 100%) !important;
+  box-shadow: 0 8px 32px rgba(8, 145, 178, 0.45) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  animation: floating-cool 3s ease-in-out infinite, pulse-glow 2s infinite !important;
+  width: 64px !important;
+  height: 64px !important;
+  border-radius: 50% !important;
 }
 
-#WACLauncher__Button:hover {
-  transform: scale(1.1) translateY(-5px) !important;
-  box-shadow: 0 15px 40px rgba(8, 145, 178, 0.6) !important;
+#WACLauncher__Button:hover,
+.WACLauncher__Button:hover {
+  transform: scale(1.15) translateY(-8px) rotate(5deg) !important;
+  box-shadow: 0 15px 45px rgba(5, 150, 105, 0.6) !important;
+  filter: brightness(1.1) !important;
 }
 
+/* Custom Icon Glow */
 .WACLauncher__IconContainer svg {
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5)) !important;
+  width: 32px !important;
+  height: 32px !important;
 }
 
-#WACLauncher__Button .WACLauncher__Badge {
-  background: var(--accent) !important;
-  border: 2px solid white !important;
-  box-shadow: 0 4px 10px rgba(245, 158, 11, 0.4) !important;
-}
-
-/* Watson Chat Window Tweaks */
+/* Chat Window - Premium Glassmorphism */
 .WAC__EmbeddedContainer {
-  border-radius: 20px !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(25px) !important;
+  -webkit-backdrop-filter: blur(25px) !important;
+  border-radius: 24px !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.2) !important;
   overflow: hidden !important;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15) !important;
 }
 
-/* CUSTOM ANIMATIONS */
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-@keyframes glow {
-  0% {
-    box-shadow: 0 0 5px rgba(8, 145, 178, 0.2);
-  }
-
-  50% {
-    box-shadow: 0 0 25px rgba(8, 145, 178, 0.5);
-  }
-
-  100% {
-    box-shadow: 0 0 5px rgba(8, 145, 178, 0.2);
-  }
-}
-
-/* Apply floating to the back-to-top too */
+/* Back to Top button sync */
 .back-to-top {
-  animation: float 5s ease-in-out infinite;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%) !important;
+  border: 2px solid white !important;
+  animation: floating-cool 4s ease-in-out infinite;
+}
+
+/* NEW ANIMATIONS */
+@keyframes floating-cool {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(8, 145, 178, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 15px rgba(8, 145, 178, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(8, 145, 178, 0);
+  }
 }
